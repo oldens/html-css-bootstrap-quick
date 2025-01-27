@@ -107,3 +107,63 @@
 - У цьому прикладі:
   - `relative` задає початкове положення.
   - `absolute` зміщує заголовок усередині контейнера `.main-header`.
+
+## Властивість display:grid
+
+### Теорія:
+- `display:grid` дозволяє створювати складні макети за допомогою грід-системи.
+- Основні властивості:
+  - `grid-template-columns` — визначає кількість і розміри колонок.
+  - `grid-template-rows` — визначає кількість і розміри рядків.
+  - `gap` — відстань між елементами гріда.
+
+### Дія:
+- Створюємо грід-контейнер:
+```css
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+.grid-item {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+```
+
+### Теорія:
+- `repeat(3, 1fr)` створює три колонки однакової ширини.
+- `auto` дозволяє рядкам автоматично підлаштовуватися під вміст.
+- `gap: 20px` додає відстань між елементами гріда.
+
+## Властивість display:flex
+
+### Теорія:
+- `display:flex` дозволяє створювати гнучкі макети за допомогою Flexbox.
+- Основні властивості:
+  - `flex-direction` — визначає напрямок розташування елементів.
+  - `justify-content` — вирівнювання елементів по головній осі.
+  - `align-items` — вирівнювання елементів по перпендикулярній осі.
+
+### Дія:
+- Створюємо гнучкий контейнер:
+```css
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-item {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+```
+
+### Теорія:
+- `flex-direction: row` розташовує елементи в ряд.
+- `justify-content: space-between` додає рівномірні відступи між елементами.
+- `align-items: center` вирівнює елементи по вертикалі.
